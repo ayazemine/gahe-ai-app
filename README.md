@@ -51,6 +51,7 @@ GAHE-AI/
 ├── prediction_engine.py            # Loads trained models & makes predictions
 ├── hybrid_model.py                 # CNN feature extractor architecture
 ├── mRMR.py                         # mRMR feature selection
+├── dataset_new.csv                 # Open-access Dataset
 ├── requirements.txt                # Python dependencies
 ├── templates/
 │   └── index.html                  # Web interface
@@ -74,6 +75,36 @@ GAHE-AI/
 | "Model not loaded" | Ensure all `.pkl` and `.pickle` files exist in `mrmr_experiment_results/` |
 | Import error | Run `pip install -r requirements.txt` |
 | Port in use | Change the port in `app.py` |
+
+## Dataset
+
+### dataset_new.csv
+
+This repository includes an openly accessible dataset:
+
+**File:** `dataset_new.csv`  
+
+**Description:**  
+The dataset contains **532 experimental data points** obtained from a Ground-Air Heat Exchanger (GAHE) system. Each record consists of the input parameters used in the prediction model and the corresponding outlet air temperature values.
+
+### Features
+
+- `T_inlet` – Air Inlet Temperature (K)  
+- `T_soil` – Soil Temperature (K)  
+- `Re` – Reynolds Number (–)  
+- `D` – Pipe Diameter (m)  
+- `H` – Burial Depth (m)  
+- `L` – Pipe Length (m)  
+- `T_outlet` – Outlet Air Temperature (K)  
+
+### Data Availability and Usage Rights
+
+The dataset has been made **openly accessible by the authors** for academic and research purposes.
+
+- The dataset may be freely used in **academic and scientific studies**.  
+- Proper citation of the related published article is required when using this dataset in any publication.  
+
+If you use this dataset in your research, please ensure that you cite the associated publication.
 
 ## License
 
