@@ -21,17 +21,6 @@ python app.py
 
 Navigate to **http://127.0.0.1:5000**
 
-## Input Parameters
-
-| Symbol | Parameter | Unit | Description |
-|--------|-----------|------|-------------|
-| T_inlet | Air Inlet Temperature | K | Inlet air temperature of the GAHE system |
-| T_soil | Soil Temperature | K | Underground soil temperature |
-| Re | Reynolds Number | — | Flow regime indicator |
-| D | Pipe Diameter | m | Diameter of the buried pipe |
-| H | Burial Depth | m | Depth of the pipe below ground |
-| L | Pipe Length | m | Total length of the buried pipe |
-
 ## Available Models
 
 Four ML models are pre-trained with GWO-optimized hyperparameters:
@@ -42,6 +31,36 @@ Four ML models are pre-trained with GWO-optimized hyperparameters:
 - **AdaBoost**
 
 The user can select any model from the web interface dropdown.
+## Dataset
+
+### dataset_new.csv
+
+This repository includes an openly accessible dataset:
+
+**File:** `dataset_new.csv`  
+
+**Description:**  
+The dataset contains **532 experimental data points** obtained from a Ground-Air Heat Exchanger (GAHE) system. Each record consists of the input parameters used in the prediction model and the corresponding outlet air temperature values.
+
+### Input Parameters
+
+| Symbol | Parameter | Unit | Description |
+|--------|-----------|------|-------------|
+| T_inlet | Air Inlet Temperature | K | Inlet air temperature of the GAHE system |
+| T_soil | Soil Temperature | K | Underground soil temperature |
+| Re | Reynolds Number | — | Flow regime indicator |
+| D | Pipe Diameter | m | Diameter of the buried pipe |
+| H | Burial Depth | m | Depth of the pipe below ground |
+| L | Pipe Length | m | Total length of the buried pipe |
+
+### Data Availability and Usage Rights
+
+The dataset has been made **openly accessible by the authors** for academic and research purposes.
+
+- The dataset may be freely used in **academic and scientific studies**.  
+- Proper citation of the related published article is required when using this dataset in any publication.  
+
+If you use this dataset in your research, please ensure that you cite the associated publication.
 
 ## File Structure
 
@@ -67,7 +86,6 @@ GAHE-AI/
     └── optimization_results.csv     # Model performance summary
 ```
 
-
 ## Troubleshooting
 
 | Problem | Solution |
@@ -76,35 +94,6 @@ GAHE-AI/
 | Import error | Run `pip install -r requirements.txt` |
 | Port in use | Change the port in `app.py` |
 
-## Dataset
-
-### dataset_new.csv
-
-This repository includes an openly accessible dataset:
-
-**File:** `dataset_new.csv`  
-
-**Description:**  
-The dataset contains **532 experimental data points** obtained from a Ground-Air Heat Exchanger (GAHE) system. Each record consists of the input parameters used in the prediction model and the corresponding outlet air temperature values.
-
-### Features
-
-- `T_inlet` – Air Inlet Temperature (K)  
-- `T_soil` – Soil Temperature (K)  
-- `Re` – Reynolds Number (–)  
-- `D` – Pipe Diameter (m)  
-- `H` – Burial Depth (m)  
-- `L` – Pipe Length (m)  
-- `T_outlet` – Outlet Air Temperature (K)  
-
-### Data Availability and Usage Rights
-
-The dataset has been made **openly accessible by the authors** for academic and research purposes.
-
-- The dataset may be freely used in **academic and scientific studies**.  
-- Proper citation of the related published article is required when using this dataset in any publication.  
-
-If you use this dataset in your research, please ensure that you cite the associated publication.
 
 ## License
 
