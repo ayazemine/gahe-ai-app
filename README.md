@@ -98,3 +98,8 @@ GAHE-AI/
 ## License
 
 This project was created for academic research purposes.
+## Citation
+
+If you use this dataset in your research or any academic publication, please cite the following paper:
+
+```Taşdelen, F., Ayaz, İ., & Ayaz, E. (2026). A hybrid CNN-based feature engineering and GWO-optimised machine learning framework for performance prediction of ground–air heat exchangers. Journal of Building Engineering, 116059.```
